@@ -1,0 +1,9 @@
+# system.prop for lt02ltespr
+#
+
+rild.libpath=/system/lib/libsec-ril.so
+rild.libargs=-d /dev/smd0
+ro.sf.hwrotation=270
+ro.yas.enable=true
+telephony.lteOnCdmaDevice=1
+ro.telephony.default_network=8
