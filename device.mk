@@ -14,7 +14,7 @@
 #
 
 # Inherit from lt02ltexx-common
-$(call inherit-product, device/samsung/lt02ltespr-common/lt02ltespr-common.mk)
+$(call inherit-product, device/samsung/lt02ltexx-common/lt02ltexx-common.mk)
 
 # Device overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/lt02ltespr/overlay
