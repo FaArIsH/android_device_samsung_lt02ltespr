@@ -19,7 +19,7 @@
     <!-- Show APN Settings for some CDMA carriers -->
     <bool name="config_show_apn_setting_cdma">true</bool>
 
-    <!-- This device implements a noise suppression device for in call audio-->
-    <bool name="has_in_call_noise_suppression">true</bool>
+    <!-- Sprint Message Wait Indicator Quirk -->
+    <bool name="sprint_mwi_quirk">true</bool>
 
 </resources>
