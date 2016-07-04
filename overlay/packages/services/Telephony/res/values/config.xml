@@ -21,5 +21,8 @@
 
     <!-- Sprint Message Wait Indicator Quirk -->
     <bool name="sprint_mwi_quirk">true</bool>
+    
+    <!-- Show enabled lte option for lte device -->
+    <bool name="config_enabled_lte" translatable="false">true</bool>
 
 </resources>
