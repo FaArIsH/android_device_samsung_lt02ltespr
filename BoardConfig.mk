@@ -29,6 +29,13 @@ TARGET_OTA_ASSERT_DEVICE := lt02lte,lt02ltespr,lt02ltetmo,serranolte
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8930_lt02_spr_defconfig
 
+# Optimizations
+CLANG_O3 := true
+STRICT_ALIASING := false
+KRAIT_TUNINGS := false
+GRAPHITE_OPTS := false
+ENABLE_GCCONLY := true
+
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_lt02lte
