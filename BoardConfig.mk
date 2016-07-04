@@ -29,13 +29,6 @@ TARGET_OTA_ASSERT_DEVICE := lt02lte,lt02ltespr,lt02ltetmo
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8930_lt02_spr_defconfig
 
-# Optimizations
-CLANG_O3 := true
-STRICT_ALIASING := false
-KRAIT_TUNINGS := false
-GRAPHITE_OPTS := false
-ENABLE_GCCONLY := true
-
 # Dex
 ifeq ($(HOST_OS),linux)
   ifeq ($(TARGET_BUILD_VARIANT),userdebug)
