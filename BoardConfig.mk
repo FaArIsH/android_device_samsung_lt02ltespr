@@ -24,7 +24,7 @@
 -include device/samsung/lt02ltexx-common/BoardConfigCommon.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := lt02lte,lt02ltespr,lt02ltetmo,serranolte
+TARGET_OTA_ASSERT_DEVICE := lt02lte,lt02ltespr,lt02ltetmo
 
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8930_lt02_spr_defconfig
@@ -35,6 +35,15 @@ STRICT_ALIASING := false
 KRAIT_TUNINGS := false
 GRAPHITE_OPTS := false
 ENABLE_GCCONLY := true
+
+# Dex
+ifeq ($(HOST_OS),linux)
+  ifeq ($(TARGET_BUILD_VARIANT),userdebug)
+    ifeq ($(WITH_DEXPREOPT),)
+      WITH_DEXPREOPT := true
+    endif
+  endif
+endif
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
