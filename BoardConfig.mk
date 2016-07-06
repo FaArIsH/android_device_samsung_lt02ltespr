@@ -20,7 +20,7 @@
 # definition file).
 #
 
-# Inherit from common lt02ltexx
+# Inherit from common serrano
 -include device/samsung/lt02ltexx-common/BoardConfigCommon.mk
 
 # Assert
@@ -29,16 +29,7 @@ TARGET_OTA_ASSERT_DEVICE := lt02lte,lt02ltespr,lt02ltetmo
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8930_lt02_spr_defconfig
 
-# Dex
-ifeq ($(HOST_OS),linux)
-  ifeq ($(TARGET_BUILD_VARIANT),userdebug)
-    ifeq ($(WITH_DEXPREOPT),)
-      WITH_DEXPREOPT := true
-    endif
-  endif
-endif
-
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_lt02lte
-TARGET_RECOVERY_DEVICE_MODULES := libinit_lt02lte
+TARGET_LIBINIT_DEFINES_FILE := device/samsung/l02ltespr/init/init_lt02lte.c
