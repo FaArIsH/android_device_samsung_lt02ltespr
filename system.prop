@@ -7,4 +7,4 @@ rild.libargs=-d /dev/smd0
 telephony.lteOnCdmaDevice=1
 ro.telephony.default_network=8
 
-ro.sf.hwrotation=270
+# ro.sf.hwrotation=270
