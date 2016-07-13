@@ -4,7 +4,7 @@
 /recovery    emmc /dev/block/mmcblk0p14
 /system      ext4 /dev/block/mmcblk0p21                    flags=display="System"
 /cache       ext4 /dev/block/mmcblk0p22                    flags=display="Cache"
-/data        ext4 /dev/block/mmcblk0p25                    length=-16384
+/data        ext4 /dev/block/mmcblk0p24                    length=-16384
 
 /external_sd auto /dev/block/mmcblk1p1  /dev/block/mmcblk1 flags=display="microSD Card";storage;wipeingui;removable
 /usb-otg     auto /dev/block/sda1       /dev/block/sda     flags=display="USB-OTG";storage;wipeingui;removable
