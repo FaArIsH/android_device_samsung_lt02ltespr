@@ -5,3 +5,11 @@ rild.libpath=/system/lib/libsec-ril.so
 rild.libargs=-d /dev/smd0
 
 ro.sf.hwrotation=270
+
+# I9195 Hardware Info
+ro.device.chipset=Qualcomm Snapdragon 400 MSM8930AB
+ro.device.cpu=Krait 300, 1700 Mhz
+ro.device.gpu=Qualcomm Adreno 305
+ro.device.rear_cam=3 MP
+ro.device.front_cam=1 MP
+ro.device.screen_res=1024x600
