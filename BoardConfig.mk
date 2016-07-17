@@ -29,10 +29,6 @@ TARGET_OTA_ASSERT_DEVICE := lt02lte,lt02ltespr,lt02ltetmo
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8930_lt02_spr_defconfig
 
-# Enable dex pre-optimization with PIC
-WITH_DEXPREOPT := true
-WITH_DEXPREOPT_PIC := true
-
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_lt02lte
