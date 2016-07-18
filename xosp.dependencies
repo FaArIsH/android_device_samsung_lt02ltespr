@@ -1,0 +1,38 @@
+[
+  {
+    "remote": "github",
+    "repository": "FaArIsH/android_device_samsung_qcom-common",
+    "target_path": "device/samsung/qcom-common",
+    "revision": "cm-13.0"
+  },
+  {
+    "remote": "github",
+    "repository": "FaArIsH/android_device_samsung_msm8930-common",
+    "target_path": "device/samsung/msm8930-common",
+    "revision": "cm-13.0"
+  },
+  {
+    "remote": "github",
+    "repository": "tioguda/android_device_samsung_lt02ltexx-common",
+    "target_path": "device/samsung/lt02ltexx-common",
+    "revision": "cm-13.0"
+  },
+  {
+    "remote": "github",
+    "repository": "FaArIsH/android_kernel_samsung_msm8930-common",
+    "target_path": "kernel/samsung/msm8930-common",
+    "revision": "remix"
+  },
+  {
+    "remote": "github",
+    "repository":  "CyanogenMod/android_external_stlport",
+    "target_path": "external/stlport",
+    "revision": "cm-13.0"
+  },
+  {
+    "remote": "github",
+    "repository":  "FaArIsH/proprietary_vendor_samsung",
+    "target_path": "vendor/samsung",
+    "revision": "master"
+  }
+]
