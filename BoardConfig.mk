@@ -20,20 +20,16 @@
 # definition file).
 #
 
-# Inherit from common lt02ltexx
+# Inherit from common lt02lte
 -include device/samsung/lt02ltexx-common/BoardConfigCommon.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := lt02lte,lt02ltespr,lt02ltetmo
+TARGET_OTA_ASSERT_DEVICE := lt02ltespr,lt02ltetmo
 
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8930_lt02_spr_defconfig
 
-# Enable dex pre-optimization with PIC
-WITH_DEXPREOPT := true
-WITH_DEXPREOPT_PIC := true
-
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_lt02lte
-TARGET_RECOVERY_DEVICE_MODULES := libinit_lt02lte
+TARGET_LIBINIT_DEFINES_FILE := device/samsung/lt02ltespr/init/init_lt02lte.c

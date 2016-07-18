@@ -54,16 +54,12 @@ void vendor_load_properties()
         property_set("ro.build.description", "lt02ltespr-user 4.4.2 KOT49H T217SVPUBOH1 release-keys");
         property_set("ro.product.model", "SM-T217S");
         property_set("ro.product.device", "lt02ltespr");
-        property_set("telephony.lteOnCdmaDevice", "1");
-        property_set("ro.telephony.default_network", "8");
     } else if (strstr(bootloader, "T217T")) {
         /* lt02ltetmo */
         property_set("ro.build.fingerprint", "samsung/lt02ltetmo/lt02ltetmo:4.4.2/KOT49H/T217TVPUBOH1:user/release-keys");
         property_set("ro.build.description", "lt02ltetmo-user 4.4.2 KOT49H T217TVPUBOH1 release-keys");
         property_set("ro.product.model", "SM-T217T");
         property_set("ro.product.device", "lt02ltetmo");
-        property_set("telephony.lteOnGsmDevice", "1");
-        property_set("ro.telephony.default_network", "3");
     } else if (strstr(bootloader, "E370K")) {
         /* serranoltektt */
         property_set("ro.build.fingerprint", "samsung/serranoltektt/serranoltektt:4.4.4/KTU84P/E370KKTU2BNK5:user/release-keys");
@@ -73,6 +69,5 @@ void vendor_load_properties()
     }
 
     property_get("ro.product.device", device);
-    strlcpy(devicename, device, sizeof(devicename));
-    ERROR("Found bootloader id %s setting build properties for %s device\n", bootloader, devicename);
+    ERROR("Found bootloader id %s setting build properties for %s device\n", bootloader, device);
 }

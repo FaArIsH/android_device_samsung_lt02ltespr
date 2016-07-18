@@ -2,6 +2,6 @@
 
 set -e
 
-export DEVICE=lt02ltexx-common
+export DEVICE=serrano-common
 export VENDOR=samsung
 ./../$DEVICE/extract-files.sh $@
