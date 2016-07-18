@@ -1,1 +1,1 @@
-add_lunch_combo cm_lt02ltespr-userdebug
+add_lunch_combo xosp_lt02ltespr-userdebug
