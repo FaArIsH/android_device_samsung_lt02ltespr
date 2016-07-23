@@ -33,6 +33,9 @@ TARGET_KERNEL_VARIANT_CONFIG := msm8930_lt02_spr_defconfig
 WITH_DEXPREOPT := true
 WITH_DEXPREOPT_PIC := true
 
+# Charger
+BOARD_NO_CHARGER_LED := true
+
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_lt02lte
