@@ -33,6 +33,11 @@ TARGET_KERNEL_VARIANT_CONFIG := msm8930_lt02_spr_defconfig
 WITH_DEXPREOPT := true
 WITH_DEXPREOPT_PIC := true
 
+#Add google webview chromium prebuild packages
+PRODUCT_PACKAGES += \
+    libwebviewchromium_plat_support \
+    libwebviewchromium_loader
+    
 # Charger
 BOARD_NO_CHARGER_LED := true
 
